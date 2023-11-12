@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>fixedwing</name>
+    <version>1.0.0</version>
+    <description>This is a fixed wing  package </description>
+
+    <maintainer email="omarkhaled42@gmail.com">James Jackson</maintainer>
+    <author>Omar Khaled</author>
+
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>gazebo_plugins</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+
+    <build_export_depend>gazebo_ros</build_export_depend>
+    <build_export_depend>gazebo_plugins</build_export_depend>
+    <build_export_depend>roscpp</build_export_depend>
+    
+    <exec_depend>gazebo_plugins</exec_depend>
+    <exec_depend>gazebo_ros</exec_depend>
+    <exec_depend>roscpp</exec_depend>
+    	
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+
+
+  <depend>eigen</depend>
+  <depend>gazebo</depend>
+
+
+  <export>
+    <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" />
+  </export>
+
+</package>

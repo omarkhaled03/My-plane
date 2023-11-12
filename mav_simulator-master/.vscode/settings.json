@@ -1,0 +1,19 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/omer/my_plane/devel/lib/python3/dist-packages",
+        "/home/omer/plane_sim/devel/lib/python3/dist-packages",
+        "/home/omer/plugin_test/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "cmake.sourceDirectory": "${workspaceFolder}/autopilot",
+    "python.analysis.extraPaths": [
+        "/home/omer/my_plane/devel/lib/python3/dist-packages",
+        "/home/omer/plane_sim/devel/lib/python3/dist-packages",
+        "/home/omer/plugin_test/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "files.associations": {
+        "*.ipp": "cpp",
+        "*.tcc": "cpp"
+    }
+}

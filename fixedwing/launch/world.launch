@@ -1,0 +1,32 @@
+<launch>
+  <arg name="world_file" default="example_world.world" />
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  
+  <param name="robot_description" textfile="$(find my_package)/urdf/my_robot.urdf"/>
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model my_robot" output="screen"/>
+
+  <group if="$(arg gui)">
+    <arg name="display_gui" default="true"/>
+  </group>
+  <group unless="$(arg gui)">
+    <arg name="display_gui" default="false"/>
+  </group>
+
+  <param name="use_sim_time" value="$(arg use_sim_time)"/>
+  
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find my_package)/worlds/$(arg world_file)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="gui" value="$(arg display_gui)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+  
+</launch>
+

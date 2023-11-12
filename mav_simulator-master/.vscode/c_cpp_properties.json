@@ -1,0 +1,42 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/omer/my_plane/devel/include/**",
+        "/home/omer/plane_sim/devel/include/**",
+        "/home/omer/plugin_test/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/omer/plane_sim/src/mav_simulator-master/autopilot/include/**",
+        "/home/omer/plane_sim/src/mav_simulator-master/dynamics/include/**",
+        "/home/omer/plane_sim/src/mav_simulator-master/estimator/include/**",
+        "/home/omer/my_plane/src/fixedwing/include/**",
+        "/home/omer/plane_sim/src/roscopter-master/roscopter/include/**",
+        "/home/omer/plane_sim/src/roscopter-master/roscopter_sim/include/**",
+        "/home/omer/plane_sim/src/roscopter-master/roscopter_utils/include/**",
+        "/home/omer/plane_sim/src/rosflight-master/rosflight/include/**",
+        "/home/omer/plane_sim/src/rosflight-master/rosflight_firmware/include/**",
+        "/home/omer/plane_sim/src/rosflight_plugins-master/include/**",
+        "/home/omer/plane_sim/src/rosflight-master/rosflight_sim/include/**",
+        "/home/omer/plane_sim/src/rosflight-master/rosflight_utils/include/**",
+        "/home/omer/plane_sim/src/rosplane-RC1.0/rosplane/include/**",
+        "/home/omer/plane_sim/src/rosplane-RC1.0/rosplane_sim/include/**",
+        "/home/omer/plane_sim/src/rotors_simulator-master/rotors_control/include/**",
+        "/home/omer/plane_sim/src/rotors_simulator-master/rotors_gazebo_plugins/include/**",
+        "/home/omer/plane_sim/src/rotors_simulator-master/rotors_hil_interface/include/**",
+        "/home/omer/plane_sim/src/rotors_simulator-master/rotors_joy_interface/include/**",
+        "/home/omer/plane_sim/src/mav_simulator-master/tools/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
